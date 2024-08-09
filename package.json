@@ -11,6 +11,11 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 'Running lint-staged...' && lint-staged"
+    }
+  },
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
